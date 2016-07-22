@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <style>
+    #logo, #links {
+      text-align:center
+    }
+    #monogram {
+      fill:none;
+      fill-rule:evenodd;
+      stroke:#241c1c;
+      stroke:url(#bg);
+      stroke-width:14px;
+      stroke-linecap:square;
+      stroke-linejoin:bevel;
+      stroke-opacity:1;
+
+      -webkit-transition: stroke-width 0.3s;  /* Safari */
+      transition: stroke-width 0.3s;
+    }
+    #monogram:hover { stroke-width:34px;}
+
+    a, a:visited {
+      color:#b33c00
+    }
+
+    a:hover, a:active {
+      color:#ff5500
+    }
+
+  </style>
+  </head>
+  <body>
+    <div id="about">
+      <div id="logo">
+        <svg
+          id="logo-svg"
+          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+          width="300" height="300" viewBox="0 0 300 300" version="1.1">
+          <defs id="defs4">
+             <pattern id="bg" patternUnits="userSpaceOnUse" width="1200" height="900">
+               <image xlink:href="bg.jpg" x="-600" y="-450" width="1200" height="900" />
+             </pattern>
+          </defs>
+          <path id="monogram"  d="m 72.435619,227.60898 0,-155.12874 155.128761,155.12875 -1e-5,-155.12875 m -77.56436,-32.21742 0,219.47436 M 72.435629,40.26282 l 155.128741,0" />
+        </svg>
+      </div>
+    </div>
+    <div id="links">
+      <a href="https://twitter.com/not7CD">@not7CD</a> <br>
+      <a href="code/"> Morse'a </a>
+    </div>
+  </body>
+</html>
