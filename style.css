@@ -78,7 +78,7 @@ body.preload * {
 
 
       #background-expander {
-        background:#dadada url(bg.jpg) no-repeat center center;
+        background:#dadada url(bg-min.jpg) no-repeat center center;
 
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
