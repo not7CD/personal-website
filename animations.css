@@ -1,0 +1,53 @@
+@-webkit-keyframes bg-expand {
+    0%   {width: 0px; height: 0px; border-radius: 50%;}
+    50%  {width: 110%; height: 110%; border-radius: 50%;}
+    100% {border-radius: 0; width: 200%; height: 200%;}
+}
+@-webkit-keyframes bg-collapse {
+    100%   {width: 0px; height: 0px; border-radius: 50%; }
+    50%  {width: 110%; height: 110%; border-radius: 50%;}
+    0% {border-radius: 0; width: 200%; height: 200%;}
+}
+@keyframes bg-collapse {
+    100%   {width: 0px; height: 0px; border-radius: 50%; }
+    50%  {width: 110%; height: 110%; border-radius: 50%;}
+    0% {border-radius: 0; width: 200%; height: 200%;}
+}
+@keyframes bg-expand {
+    0%   {width: 0px; height: 0px; border-radius: 50%;}
+    50%  {width: 110%; height: 110%; border-radius: 50%;}
+    100% {border-radius: 0; width: 200%; height: 200%;}
+}
+
+@-webkit-keyframes z-index-expand {
+  from {z-index: -1;}
+  to {z-index: -1;}
+}
+@-webkit-keyframes z-index-collapse {
+  from {z-index: -1;}
+
+  to {z-index: 1;}
+}
+
+@keyframes z-index-expand {
+  from {z-index: -1;}
+  to {z-index: -1;}
+}
+@keyframes z-index-collapse {
+  from {z-index: -1;}
+
+  to {z-index: 1;}
+}
+
+@-webkit-keyframes monogram-collapse {
+  from {stroke-width: 14; stroke:#fff;}
+  40% {stroke-width: 1;   }
+  to {stroke-width: 14;   stroke:url(#bg);}
+}
+@-webkit-keyframes monogram-expand {
+  from {stroke-width: 14; stroke:url(#bg);}
+  20% {stroke-width: 14; stroke:url(#bg);}
+  21% {stroke-width: 0; stroke:url(#bg);}
+  50% {stroke-width: 0;  stroke:#fff; }
+  to {stroke-width: 14;   stroke:#fff;}
+}

@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    #logo, #links {
-      text-align:center
+  <title>not7CD</title>
+  <meta name="description" content="Private dump of user known as not7CD.">
+  <meta name="author" content="Norbert Szulc">
+
+  <meta property="og:title" content="not7CD">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:description" content="Private dump of user known as not7CD">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"  />
+
+</head>
+<body class ="preload">
+  <div id="about">
+
+    <div id="logo">
+      <div id="logo-center"> <div id="background-expander"></div> </div>
+      <svg
+      id="logo-svg"
+      xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+      width="300" height="300" viewBox="0 0 300 300" version="1.1">
+      <defs id="defs4">
+        <pattern id="bg" patternUnits="userSpaceOnUse" width="1200" height="900">
+          <image xlink:href="bg.jpg" x="-450" y="-300" width="1200" height="900" />
+        </pattern>
+      </defs>
+      <path id="monogram"  d="m 72.435619,227.60898 0,-155.12874 155.128761,155.12875 -1e-5,-155.12875 m -77.56436,-32.21742 0,219.47436 M 72.435629,40.26282 l 155.128741,0" />
+    </svg>
+  </div>
+  <div id="about-text">
+    <h3>not7CD</h3>
+    <p>Tu się pojawi jakaś notka na moj temat.</p>
+    <p>
+      Moze coś się pojawi na Twitterze.
+      <a href="https://twitter.com/not7CD">@not7CD</a>
+    </p>
+  </div>
+
+</div>
+<div id="links">
+  <a href="code/"> Morse'a </a>
+</div>
+
+<script>
+setTimeout(function(){
+  document.body.className="";
+},600);
+
+$( window ).resize(function() {
+  $( window ).width() > $( window ).height() ? $('#logo-center').width($( window ).width()).height($( window ).width()) : $('#logo-center').width($( window ).height()).height($( window ).height());
+});
+
+$(function () {
+  $("#logo-svg").click(function () {
+    $("#about").toggleClass("expand");
+
+    if (window.getSelection) {
+      if (window.getSelection().empty) {  // Chrome
+        window.getSelection().empty();
+      } else if (window.getSelection().removeAllRanges) {  // Firefox
+        window.getSelection().removeAllRanges();
+      }
+    } else if (document.selection) {  // IE?
+      document.selection.empty();
     }
-    #monogram {
-      fill:none;
-      fill-rule:evenodd;
-      stroke:#241c1c;
-      stroke:url(#bg);
-      stroke-width:14px;
-      stroke-linecap:square;
-      stroke-linejoin:bevel;
-      stroke-opacity:1;
+  });
+});
 
-      -webkit-transition: stroke-width 0.3s;  /* Safari */
-      transition: stroke-width 0.3s;
-    }
-    #monogram:hover { stroke-width:34px;}
 
-    a, a:visited {
-      color:#b33c00
-    }
-
-    a:hover, a:active {
-      color:#ff5500
-    }
-
-  </style>
-  </head>
-  <body>
-    <div id="about">
-      <div id="logo">
-        <svg
-          id="logo-svg"
-          xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-          width="300" height="300" viewBox="0 0 300 300" version="1.1">
-          <defs id="defs4">
-             <pattern id="bg" patternUnits="userSpaceOnUse" width="1200" height="900">
-               <image xlink:href="bg.jpg" x="-600" y="-450" width="1200" height="900" />
-             </pattern>
-          </defs>
-          <path id="monogram"  d="m 72.435619,227.60898 0,-155.12874 155.128761,155.12875 -1e-5,-155.12875 m -77.56436,-32.21742 0,219.47436 M 72.435629,40.26282 l 155.128741,0" />
-        </svg>
-      </div>
-    </div>
-    <div id="links">
-      <a href="https://twitter.com/not7CD">@not7CD</a> <br>
-      <a href="code/"> Morse'a </a>
-    </div>
-  </body>
+</script>
+</body>
 </html>
