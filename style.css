@@ -7,6 +7,8 @@ body.preload * {
 
 html {
     overflow-y: scroll;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 body {
@@ -137,14 +139,17 @@ svg:hover #monogram {
     box-shadow: 3px 0 6px #333;
 }
 
-#links {}
+#links {
+    margin-bottom: 3em;
+    z-index: -200;
+}
 
 #footer {
-    z-index: -9000;
+    z-index: -100;
     color: #666;
-    position: fixed;
+    /*position: fixed;
     left: 0;
-    right: 0;
+    right: 0;*/
     bottom: 0px;
     height: 1em;
     padding: 2em 3em;
