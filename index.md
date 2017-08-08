@@ -4,3 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+<!-- # not7CD -->
+Robię rzeczy przy komputerze, głównie w internecie.
+
+Interesuje się technologiami internetowymi, automatyzacją i przetwarzaniem danych. Lubię jak coś wygląda dobrze. Moje aktualne projekty najpewniej znajdą się [GitHub'ie](https://github.com/not7CD)

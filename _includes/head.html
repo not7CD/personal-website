@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+</head>
+
+<!--
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>not7CD</title>
+  <meta name="description" content="Private dump of user known as not7CD.">
+  <meta name="author" content="Norbert Szulc">
+
+  <meta property="og:title" content="not7CD">
+  <meta property="og:image" content="logo/logo.png">
+  <meta property="og:description" content="Private dump of user known as not7CD">
+
+  <link rel="icon" type="image/png" href="logo/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="logo/favicon-16x16.png" sizes="16x16">
+  <meta name="theme-color" content="#ff6600">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+  <script async src="analytics.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style.min.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&amp;subset=latin-ext" rel="stylesheet">
+</head>
+ -->
