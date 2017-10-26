@@ -1,0 +1,8 @@
+baseurl = "http://not7cd.net/"
+languageCode = "en-us"
+author = "Norbert Szulc"
+title = "not7CD"
+theme = "cocoa"
+
+[params]
+avatar = "img/profile.png"
